@@ -4,4 +4,4 @@
 @set length=!%list%_length!
 @set /A new_length=%length%-1
 @set item=!%list%_%new_length%!
-@endlocal && set "%list%_length=%new_length%" && set "%output%=%item%"
+@endlocal && set "%list%_%new_length%=" && set "%list%_length=%new_length%" && set "%output%=%item%"
