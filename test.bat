@@ -17,3 +17,6 @@
 @call pop foo list
 @call each echo list
 @echo item: %foo%
+
+@call each "set foo=" list
+@echo %foo:~1%
