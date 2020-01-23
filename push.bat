@@ -3,5 +3,5 @@
 @call init
 @set item=%~1
 @set list=%~2
-@set length=!%list%%__list_sep%length!
-@endlocal && popd && set "%list%%__list_sep%%length%=%item%" && set /A %list%%__list_sep%length+=1
+@call length "%list%" len
+@endlocal && popd && set "%list%%__list_sep%%len%=%item%" && set /A %list%%__list_sep%length+=1
