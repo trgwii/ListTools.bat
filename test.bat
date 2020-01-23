@@ -1,6 +1,7 @@
 set __list_sep_set=1
 set __list_sep=
 @call split " " "input1 input2! input3" list
+@echo errorlevel %errorlevel%
 @echo "%listtype%"
 @echo "%list0%"
 @echo "%list1%"

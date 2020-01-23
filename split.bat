@@ -32,4 +32,5 @@
 )
 @call _copy __split_list "%output%" command
 @endlocal && %command%
+@set errorlevel=0
 @popd
